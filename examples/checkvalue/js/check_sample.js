@@ -114,7 +114,7 @@
   // メールアドレスの入力チェック
   const mailCheck = (event) => {
     // メールアドレスの定義 (簡易的な定義です。さらに詳細に定義する場合は下記の値を変更して下さい)
-    const mail_pattern = /^([a-zA-Z0-9])+([a-zA-Z0-9._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9._-]+)+$/;
+    const mail_pattern = /^[a-zA-Z0-9]+(?:[._-][a-zA-Z0-9]+)*@[a-zA-Z0-9_-]+(?:\.[a-zA-Z0-9_-]+)+$/;
     // event よりレコード情報を取得します
     const rec = event.record;
     // エラーの初期化
